@@ -83,7 +83,7 @@
   			<img src="img/banner.jpg">
   			<div class="header3">About the project </div>
   			<div class="about_paragraph">In this project sensor data are logged, saved and visualized. DHT11 sensor is connected to ESP8266. The microcontroller is connected to wifi and sends data to the local server using the http POST method. Data is then saved to MYSQL database. PHP scripts retrieve the data from the database and create json files. Those json files are read from js scripts that plots the data using the D3 library.<br> <br>Project made by Siladrok with the help of online guides. <a href="https://circuits4you.com/2018/03/10/esp8266-nodemcu-post-request-data-to-website/"><b>Circuits4you.com guide</b></a> <br>
-  			 <a href="https://github.com/Siladrok/Processing3_GUI_DHT11"><b>Click here</b> to visit this project's Github page!</a> </div>
+  			 <a href="https://github.com/Siladrok/IoT-Monitor"><b>Click here</b> to visit this project's Github page!</a> </div>
   			
 		</div>	
 	</section>
