@@ -1,0 +1,46 @@
+  /*Stylesheet for the D3 bar graphs*/
+
+  /*Bars*/
+  .bar{
+    fill: #00A8A9;
+  }
+
+  .bar:hover{
+    fill: steelblue;
+  }
+
+
+  /*Axis*/
+  /*Timestamps are hidden, x axis has only label*/
+  .x_axis  text {
+    visibility: hidden;
+  }
+  
+  .x_axis_label, .y_axis {
+  font-family: 'Farro', sans-serif;  
+  font-size: 16px;
+  }
+  
+  
+  .x_axis path,.y_axis path,
+  .x_axis line,.y_axis line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+    shape-rendering: crispEdges;
+  }
+
+  /*Mouse Hover tooltip*/
+  div.tooltip {
+     position: absolute;
+     text-align: center;
+     padding: .5rem;
+     background: #313639;
+     color: #f9f9f9;
+     border: 0px;
+     border-radius: 8px;
+     pointer-events: none;
+     font-size: 18px;
+     font-family: 'Farro', sans-serif;  
+}
+

@@ -1,0 +1,152 @@
+#data_table {
+    font-family: 'Farro', sans-serif;
+    border-collapse: collapse;
+    width:  90%;
+    height: 280px;
+    margin-top: 30px;
+    margin-left: 5%; 
+    margin-right:5%;
+    
+   
+    display:block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 18px;
+
+}
+
+#data_table td, #data_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    width:266px;
+}
+ 
+#data_table tr:nth-child(even){background-color: #f2f2f2;}
+#data_table tr:nth-child(odd){background-color: #ffffff;}
+
+ 
+#data_table tr:hover {background-color: steelblue;}
+ 
+#data_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #00A8A9;
+    color: white;
+}
+
+#temp_chart {
+  
+  float:left;
+  margin-left: 5%;
+  width:45%;
+  height:100%;
+}
+#hum_chart {
+  display:block;
+  float:left;
+  margin-right: 5%;
+  width:45%;  
+} 
+
+.monitor_container{
+  position: relative;
+  height: 200px;
+  width: 5000px;
+}
+/*Welcome to IoT Temperature*/
+.header  {
+  position: absolute;
+  top: 8px;
+  margin-left: 5%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 46px;
+  font-family: 'Farro', sans-serif;
+  opacity: 0.9;
+}
+
+/*&Humidity Monitor*/
+.header2  {
+  position: absolute;
+  top: 55px;
+  margin-left: 5%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: 'Farro', sans-serif;
+  opacity: 0.9;
+}
+
+/*About the project*/
+.header3  {
+  position: relative;
+  bottom: 180px;
+  margin-left: 5%;
+  padding: 10px;
+  color: white;
+  font-size: 38px;
+  font-family: 'Farro', sans-serif;
+  opacity: 0.9;
+}
+
+.about_paragraph  {
+  position: relative;
+  bottom: 200px;
+  margin-left: 5%;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Farro', sans-serif;
+  opacity: 0.9;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  max-height: 172px;
+  width: 100%;
+  color: white;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    height: 172px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  #temp_chart, #hum_chart, img {
+     /* The width is 100%, when the viewport is 800px or smaller */
+     max-height: 100%;
+  }
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
