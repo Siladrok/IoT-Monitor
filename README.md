@@ -2,31 +2,34 @@
 
 In this project sensor data are logged, saved to a database and visualized. 
 
-DHT11 sensor is connected to ESP8266. The microcontroller is connected to wifi and sends data to the local server using the http POST method. Data is then saved to MySQL database. PHP scripts retrieve the data from the database and create json files. Those json files are read from js scripts that plot the data using the D3 library.
-
+We are using a temperature and humidity sensor to collect data. The ESP8266 connects to the local network through wifi and sends data to the local server. Data is stored to a database. The client can visit the localhost homepage and view all the data logged and measurements from the last 24 Hours.
 
 ![IoT Monitor Demo](demo/demo.gif)
 
-Before making the project read this guide: 
+Part of this project was based on the following guide: 
 
 https://circuits4you.com/2018/03/10/esp8266-nodemcu-post-request-data-to-website/
 
-# Description:
+# How it works:
+![How it works](demo/diagram.png)
 
-install.php:  Installs the database (needs to run once)
+**PostData.ino**  Reads sensor data makes post requests
 
-postdemo.php: Handles the post request made by the ESP module
+**install.php:**  Installs the database (needs to run once)
 
-home.php:     Is the home page
+**postdemo.php**: Handles the post request made by the ESP module
 
-temp2json:    Takes data from database formats them in json
+**home.php:**     Is the home page
 
-hum2json:     Takes data from database formats them in json 
+**temp2json:**    Takes data from database and encodes them to json
 
-temp_script:  Reads the json data and plots the temp bar graph
+**hum2json:**     Takes data from database and encodes them to json 
 
-hum_script:   Reads the json data and plots the hum bar graph
+**temp_script.js:**  Reads the json data and plots the temp bar graph
 
+**hum_script.js:**   Reads the json data and plots the hum bar graph
+
+DHT11 sensor is connected to ESP8266. The microcontroller is connected to wifi and sends data to the local server using the http POST method. Data is then saved to MySQL database. PHP scripts retrieve the data from the database and create json files. Those json files are read from js scripts that plot the data using the D3 library.
 
 # Steps to run this project:
 
